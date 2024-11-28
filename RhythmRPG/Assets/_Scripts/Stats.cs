@@ -48,6 +48,7 @@ public class StatsInfo
 {
     public string name;
     public float value;
+    public float maxValue;
 
     public StatsInfo(string name, float value)
     {

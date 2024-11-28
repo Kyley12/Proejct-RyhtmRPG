@@ -15,7 +15,10 @@ MonoBehaviour:
   stats:
   - name: HP
     value: 100
+    maxValue: 100
   - name: Stamina
     value: 100
+    maxValue: 100
   - name: Damage
     value: 10
+    maxValue: 10
