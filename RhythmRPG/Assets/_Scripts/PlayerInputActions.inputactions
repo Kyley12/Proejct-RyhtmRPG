@@ -1,23 +1,23 @@
 {
-    "name": "PlayerActions",
+    "name": "PlayerInputActions",
     "maps": [
         {
-            "name": "PlayerActions",
-            "id": "9aea3962-8f09-4c9d-8fb8-59da006add5e",
+            "name": "Player",
+            "id": "527c9cfa-6790-4531-ab4d-4cd166e7e8ec",
             "actions": [
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "b3790b7a-4e43-4824-b165-3f4f15ab74dd",
+                    "id": "1ae4200e-6ca3-43bc-ab8c-b864912f52fe",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "AttackH",
+                    "name": "StrongAttack",
                     "type": "Button",
-                    "id": "6644bd77-03dc-4ee2-a2c3-903b941c4bda",
+                    "id": "45c4c543-76ad-40b2-849a-121cbdf07b25",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -26,7 +26,7 @@
                 {
                     "name": "Block",
                     "type": "Button",
-                    "id": "73ddd05c-4a46-4dbc-9a71-177683398b32",
+                    "id": "641f29e7-0cf3-471e-9e29-551a87d1e202",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -36,7 +36,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "89763ff4-51a4-41dd-90e2-0630c1991dda",
+                    "id": "29c93c3f-f746-4a44-a8f7-07ada67458ee",
                     "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
@@ -47,18 +47,18 @@
                 },
                 {
                     "name": "",
-                    "id": "00d4e71e-c81e-4670-8618-067ee3fa7766",
+                    "id": "2b8f6134-85b7-4eb2-9da9-94535b2dbb1f",
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": ";PC",
-                    "action": "AttackH",
+                    "action": "StrongAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "3ea04828-3ceb-4b0d-9b0d-e9818d8c5f5b",
+                    "id": "1ea9fa87-fb91-49a9-b72d-90d48c3f4b9f",
                     "path": "<Keyboard>/z",
                     "interactions": "",
                     "processors": "",
@@ -82,17 +82,6 @@
                 },
                 {
                     "devicePath": "<Mouse>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "Mobile",
-            "bindingGroup": "Mobile",
-            "devices": [
-                {
-                    "devicePath": "<Touchscreen>",
                     "isOptional": false,
                     "isOR": false
                 }
