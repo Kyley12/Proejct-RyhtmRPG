@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler
 {
     public PlayerInputActions inputActions;
-    public float attackInput;
 
     private void Awake()
     {
@@ -25,6 +24,17 @@ public class PlayerInputHandler
 
     private void Update()
     {
-        attackInput = inputActions.Player.Attack.ReadValue<float>();
+        if (inputActions.Player.Attack.WasPressedThisFrame())
+        {
+            Debug.Log("Attack button pressed!");
+        }
+        else if (inputActions.Player.Attack.IsPressed())
+        {
+            Debug.Log("Attack button is being held!");
+        }
+        else if (inputActions.Player.Attack.WasReleasedThisFrame())
+        {
+            Debug.Log("Attack button released!");
+        }
     }
 }

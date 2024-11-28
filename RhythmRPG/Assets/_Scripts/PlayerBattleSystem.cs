@@ -14,10 +14,6 @@ public class PlayerBattleSystem : MonoBehaviour
 
     private void Attack()
     {
-        //example
-        if(inputs.attackInput > 0)
-        {
-            //do something
-        }
+        
     }
 }
